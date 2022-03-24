@@ -5,4 +5,5 @@
   * Plus One -> O(N) approach passes all the test case only thing to remeber is to maintain carry and update the carry carefully.
   * Move Zeroes -> Whenever 0 is encounterted just copy every element after that index into index-1 location and put that zero at end. Also maintain a variable which will keep track of how many zeroes are already placed.
 2. Day 2
+  * Squares of a Sorted Array -> The main optimization part in this code is the sorting so we will create another array with size same as the given vector. We iterate through original array and we will push the data^2 into new vector and we will sort the new vector and return it. The sorting takes O(N LogN).
   *  
