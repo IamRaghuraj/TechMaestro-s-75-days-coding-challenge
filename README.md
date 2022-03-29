@@ -16,10 +16,15 @@
   * 3Sum -> 
 4. Day 4
   * Insert Delete GetRandom O(1) ->For this code we need to have combination of 2 data structures which are array and hashmap, the hashmap stores number with index it is placed in array and array will store the actual elements with this we can insert in O(1), delete in O(1),search in O(1) and give random number in O(1). The deletion in array is O(1) because what we will do is if we want to delete ith index we will swap that with last index of array and then just remove the last element.
-  * Subarray Sum Equals K ->
+  * Subarray Sum Equals K -> We can get answer in O(N) so the main point is that we will maintain the prefix sum for the array element meaning till that index what is total sum now after we have that we again start iterating the array now what we maintain is the map for prefix and it's count now the special part of this prefix sum is that it is actually (prefixsum[i] - k) meaning we are saying from the current sum can we able to remove some part from the front which have the required value then we can have a array with sum as k so we are kind of removing prefix section so that we can get a array sub part with required sum which is k. 
   * Next Permutation -> The intution behind it is that we will start iterating from back of the array where we look for increasing order of array meaning from the end of the array every ith element should be grater than i+1 th element and we break when the increasing stops now we got the index which we need to swap so we again start from end of the array and look for the next big number compare to the index we found from first iteration and then we break the look swap the two element and reverse the element till the end startgin from the index + 1 location. The reverse work because if we see in the first iteration we started from back and they are in increasing order from back so if you reverse it will be automatically in the incresing order. Edge case is in the first iteration from back the index might be -1 so in that we will just reverse the vector directly. Solution can be achieved in O(N). 
   * Container With Most Water -> We can get a solution in O(N) for that we use two pointer approach we put one pointer at start of array and one at the end then we calculate how much water area we can get and if it more than current value we will replace it now to move the pointer we compare the heights at the start and end index and we update that pointer whose height is small compare to other with we are trying to get maximum area as possible in the future iterations.
 5. Day 5
+  * 
+  * 
+  * 
+6. Day 6
+  * 
   * 
   * 
   * 
